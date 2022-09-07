@@ -1,4 +1,3 @@
-# -*- encoding : utf-8 -*-
 require 'rubyXL'
 require 'rubyXL/convenience_methods'
 
@@ -50,5 +49,5 @@ c = 0
     new_data[i][5].nil? ? next : worksheet.add_cell(c, 5, new_data[i][5].value)
   end
 end
-workbook_new.write './Contact Rikai Compare.xlsx'
+workbook_new.write './Compare.xlsx'
 p "DONE"
